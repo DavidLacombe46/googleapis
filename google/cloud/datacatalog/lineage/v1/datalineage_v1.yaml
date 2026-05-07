@@ -33,3 +33,62 @@ authentication:
     oauth:
       canonical_scopes: |-
         https://www.googleapis.com/auth/cloud-platform
+
+publishing:
+  method_settings:
+  - selector: google.cloud.datacatalog.lineage.v1.Lineage.ProcessOpenLineageRunEvent
+    auto_populated_fields:
+    - request_id
+  - selector: google.cloud.datacatalog.lineage.v1.Lineage.CreateProcess
+    auto_populated_fields:
+    - request_id
+  - selector: google.cloud.datacatalog.lineage.v1.Lineage.UpdateProcess
+    auto_populated_fields:
+    - request_id
+  - selector: google.cloud.datacatalog.lineage.v1.Lineage.CreateRun
+    auto_populated_fields:
+    - request_id
+  - selector: google.cloud.datacatalog.lineage.v1.Lineage.CreateLineageEvent
+    auto_populated_fields:
+    - request_id
+  new_issue_uri: https://issuetracker.google.com/issues/new?component=1530027
+  documentation_uri: https://cloud.google.com/dataplex/docs/about-data-lineage
+  api_short_name: datalineage
+  github_label: 'api: datalineage'
+  doc_tag_prefix: datalineage
+  organization: CLOUD
+  library_settings:
+  - version: google.cloud.datacatalog.lineage.v1
+    launch_stage: GA
+    java_settings:
+      common:
+        destinations:
+        - PACKAGE_MANAGER
+    cpp_settings:
+      common:
+        destinations:
+        - PACKAGE_MANAGER
+    php_settings:
+      common:
+        destinations:
+        - PACKAGE_MANAGER
+    python_settings:
+      common:
+        destinations:
+        - PACKAGE_MANAGER
+    node_settings:
+      common:
+        destinations:
+        - PACKAGE_MANAGER
+    dotnet_settings:
+      common:
+        destinations:
+        - PACKAGE_MANAGER
+    ruby_settings:
+      common:
+        destinations:
+        - PACKAGE_MANAGER
+    go_settings:
+      common:
+        destinations:
+        - PACKAGE_MANAGER
